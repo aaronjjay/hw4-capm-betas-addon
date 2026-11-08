@@ -1,0 +1,19 @@
+[project]
+name = "HW 1 Derived Returns: CRSP Market and Six Size/Value Portfolios"
+
+[dataframes.hw1_market_return]
+path = "hw1_market_return.csv"
+date_col = "date"
+docs = """One row per month-end date. `vwretd` is the value-weighted return,
+dividends included, of all CRSP common stocks, rebuilt from the CRSP monthly
+stock file by the author's FINM 32800 HW 1 pipeline (a decimal: 0.01 is one
+percent). Derived data only."""
+
+[dataframes.hw1_ff6_portfolio_returns]
+path = "hw1_ff6_portfolio_returns.csv"
+date_col = "date"
+docs = """One row per month-end date and portfolio. `portfolio` is one of the
+six Fama-French (1993) size/book-to-market portfolios (SL, SME, SH, BL, BME,
+BH: Small or Big, then Low, Medium, or High book-to-market), formed each June
+from CRSP and Compustat by the author's FINM 32800 HW 1 pipeline. `ret` is the
+portfolio's value-weighted monthly return (a decimal). Derived data only."""

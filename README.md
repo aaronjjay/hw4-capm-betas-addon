@@ -1,0 +1,1 @@
+Monthly derived returns from a FINM 32800 HW 1 pipeline (the rebuilt CRSP value-weighted market return and the six Fama-French size/value portfolios), declared in `chartbook.toml`; no raw CRSP or Compustat data.
